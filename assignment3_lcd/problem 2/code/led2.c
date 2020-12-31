@@ -1,0 +1,44 @@
+/*
+ * led2.c
+ *
+ * Created: 12/31/2020 10:13:10 PM
+ * Author: Alireza Dizaji
+ */
+
+#include <stdio.h>
+#include <mega16.h>
+#include <delay.h>
+
+#asm
+    .equ __lcd_port=0x18;
+#endasm
+#include <lcd.h>
+
+
+void main(void){
+    int i;
+    char buffer_alphabetic[] = "abcdefghijklmnopqrstwxyz";
+    PORTB = 0x00;
+    DDRB = 0x00;
+    
+    lcd_init(16);
+    lcd_clear(); 
+    
+    while(1){
+        for(i=0;i<28;i++){
+            
+            if(i<15){
+                 lcd_gotoxy(i,0);
+            }
+            else{
+                lcd_gotoxy(i%15,1);
+            } 
+            lcd_putchar(buffer_alphabetic[i]);
+            delay_ms(50); 
+            
+        }            
+        
+        lcd_clear(); 
+    }
+            
+}
