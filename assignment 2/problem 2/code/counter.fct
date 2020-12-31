@@ -1,0 +1,6 @@
+main DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"counter.c" LINE:72
+timer0_ovf_isr DSTACK_USAGE:12 DSTACK_LEVEL:12 FILE:"counter.c" LINE:36
+pow DSTACK_USAGE:12 DSTACK_LEVEL:24 FILE:"C:\cvavr\lib\math.lib" LINE:740
+exp DSTACK_USAGE:14 DSTACK_LEVEL:38 FILE:"C:\cvavr\lib\math.lib" LINE:724
+floor DSTACK_USAGE:4 DSTACK_LEVEL:42 FILE:"C:\cvavr\lib\math.lib" LINE:659
+ftrunc DSTACK_USAGE:4 DSTACK_LEVEL:46 FILE:"C:\cvavr\lib\math.lib" LINE:544

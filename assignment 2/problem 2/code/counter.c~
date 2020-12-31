@@ -30,7 +30,15 @@ int delay0;
 int delay1;
 int turn=1;
 int temp0;
+int temp1;
 
+int getdigit(int num, int n)
+{
+    int r;
+    r = num / pow(10, n);
+    r = r % 10;
+    return r;
+}
 
 // Timer 0 overflow interrupt service routine
 interrupt [TIM0_OVF] void timer0_ovf_isr(void)
@@ -39,9 +47,9 @@ interrupt [TIM0_OVF] void timer0_ovf_isr(void)
    
    if(delay1 ==2){  
         PORTC = pow(2, turn-1);
-        temp0 = number / pow(10,turn-1);
-        temp0 = temp0 = temp0 % 10;     
-        PORTD = temp0;
+        twmp = number / pow(10,turn-1);
+        temp = temp = temp % 10;     
+        PORTD = temp;
         turn++;
         if(turn>4) {
             turn=1;

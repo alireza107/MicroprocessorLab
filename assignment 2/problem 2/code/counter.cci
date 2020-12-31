@@ -1,0 +1,12 @@
+VERSION:3 SOURCE_TIMESTAMP:519F9986
+NODE:I LEVEL:0 LINE:24 "C:\cvavr\inc\mega16.h"
+NODE:I LEVEL:0 LINE:25 "C:\cvavr\inc\delay.h"
+NODE:I LEVEL:0 LINE:26 "C:\cvavr\inc\math.h"
+NODE:V LEVEL:0 LINE:28 "number -> R4,R5"
+NODE:V LEVEL:0 LINE:29 "delay0 -> R6,R7"
+NODE:V LEVEL:0 LINE:30 "delay1 -> R8,R9"
+NODE:V LEVEL:0 LINE:31 "turn -> R10,R11"
+NODE:V LEVEL:0 LINE:32 "temp0 -> R12,R13"
+NODE:F LEVEL:0 LINE:36 "timer0_ovf_isr(void)"
+NODE:F LEVEL:0 LINE:57 "timer1_ovf_isr(void)"
+NODE:F LEVEL:0 LINE:72 "main(void)"
